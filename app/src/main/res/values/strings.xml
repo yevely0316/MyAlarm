@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MyAlarm</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="days">
+        <item>월</item>
+        <item>화</item>
+        <item>수</item>
+        <item>목</item>
+        <item>금</item>
+        <item>토</item>
+        <item>일</item>
+    </string-array>
+
+    <string-array name="eachminute">
+        <item>1분</item>
+        <item>3분</item>
+        <item>5분</item>
+        <item>10분</item>
+        <item>15분</item>
+    </string-array>
+
+</resources>
