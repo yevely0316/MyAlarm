@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.layout_add_alarm).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), activity_set_alarm.class);
+                Intent intent = new Intent(getApplicationContext(), SetActivity.class);
                 startActivityForResult(intent, REQUEST_CODE_MENU);
             }
         });
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         listAlarm_setbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), activity_set_alarm.class);
+                Intent intent = new Intent(getApplicationContext(), SetActivity.class);
                 // startActivityForResult메소드를 이용해서 Acitivty를 열었을 때는 Result를 받을 수 있는 메소드를 선언해야해요
                 startActivityForResult(intent, REQUEST_CODE_MENU);
             }
