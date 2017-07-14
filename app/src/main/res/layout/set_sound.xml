@@ -5,11 +5,6 @@
     android:orientation="vertical">
 
     <!-- 레이아웃을 반반 나눠서 사용하고 싶을땐 weight에 1을 줘서 자식들이 꽉차도록 할 수 있어요 -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -19,5 +14,23 @@
             android:id="@+id/my_sd_music_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/setSound_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@android:string/cancel" />
+
+        <Button
+            android:id="@+id/setSound_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@android:string/ok" />
+
     </LinearLayout>
 </LinearLayout>

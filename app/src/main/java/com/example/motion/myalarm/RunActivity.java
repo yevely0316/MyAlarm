@@ -12,7 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import java.util.ArrayList;
 
-public class activity_run extends AppCompatActivity implements View.OnClickListener {
+public class RunActivity extends AppCompatActivity implements View.OnClickListener {
 
     private ContentResolver res;
     boolean isPlaying = true;

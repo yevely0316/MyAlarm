@@ -1,12 +1,14 @@
 package com.example.motion.myalarm;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -16,6 +18,7 @@ import java.util.ArrayList;
 public class SetSoundActivity extends AppCompatActivity {
 
     private static final int REQUEST_READ_EXTERNAL_STORAGE_PERMISSION = 1001;
+
     private ListView mySdSoundList;
 
     public ArrayList<MySdSound> setMySdSounds;
@@ -33,6 +36,19 @@ public class SetSoundActivity extends AppCompatActivity {
         mySdSoundList.setAdapter(myAdapter);
 
         // TODO: 2017-07-07 리스트 아이템에 클릭 이벤트를 주고 싶으면 listview의 onItemClickListener을 쓰면 되요
+
+        findViewById(R.id.setSound_submit).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                clickResult();
+            }
+        });
+        findViewById(R.id.setSound_cancel).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                clickResult();
+            }
+        });
     }
 
 
@@ -96,4 +112,9 @@ public class SetSoundActivity extends AppCompatActivity {
         }
     }
 
+    public void clickResult() {
+        Intent intent = new Intent();
+        setResult(RESULT_OK, intent);
+        finish();
+    }
 }
