@@ -20,11 +20,9 @@ public class MyRepeatListAdapter extends BaseAdapter {
 
     List<Repeat> list;
     LayoutInflater inflater;
-    Activity activity;
 
-    public MyRepeatListAdapter(RepeatActivity activity, List<Repeat> list) {
+    public MyRepeatListAdapter(Activity activity, List<Repeat> list) {
         this.list = list;
-        this.activity = activity;
         inflater = (LayoutInflater) activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
